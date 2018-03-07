@@ -6,66 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://izqcool.com">
-  <title>izqcool blog</title>
+  <title>关于React.js的基本概念都在这篇文章中 | izqcool blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="about me
-    
-    
-
-
-    
-        about me:
-        
-            name:
-            左 强
-        
-        
-            born:
-            1994.08.26
-        
-        
-            address:">
-<meta property="og:type" content="website">
-<meta property="og:title" content="izqcool blog">
-<meta property="og:url" content="http://izqcool.com/about/index.html">
+  <meta name="description" content="去年我写了一本差不多一百来页关于React的书，今年，我将挑战自己，将其归纳为一片文章。
+ 本文不会介绍React以及你为什么应该学习它,而是对那些已经熟悉JavaScript并了解DOM API的开发人员的React.js知识的介绍。
+ 下面所有示例的代码都会都有标注以供参考。它们纯粹是为了示例，大多数都可以有更好的写法。
+一、 React 是基于组件的 React是基于可重用组件的概念而设计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于React.js的基本概念都在这篇文章中">
+<meta property="og:url" content="http://izqcool.com/2018/03/07/关于React.js的基本概念都在这篇文章中/index.html">
 <meta property="og:site_name" content="izqcool blog">
-<meta property="og:description" content="about me
-    
-    
-
-
-    
-        about me:
-        
-            name:
-            左 强
-        
-        
-            born:
-            1994.08.26
-        
-        
-            address:">
-<meta property="og:updated_time" content="2016-03-17T15:48:36.000Z">
+<meta property="og:description" content="去年我写了一本差不多一百来页关于React的书，今年，我将挑战自己，将其归纳为一片文章。
+ 本文不会介绍React以及你为什么应该学习它,而是对那些已经熟悉JavaScript并了解DOM API的开发人员的React.js知识的介绍。
+ 下面所有示例的代码都会都有标注以供参考。它们纯粹是为了示例，大多数都可以有更好的写法。
+一、 React 是基于组件的 React是基于可重用组件的概念而设计">
+<meta property="og:updated_time" content="2018-03-07T15:08:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="izqcool blog">
-<meta name="twitter:description" content="about me
-    
-    
-
-
-    
-        about me:
-        
-            name:
-            左 强
-        
-        
-            born:
-            1994.08.26
-        
-        
-            address:">
+<meta name="twitter:title" content="关于React.js的基本概念都在这篇文章中">
+<meta name="twitter:description" content="去年我写了一本差不多一百来页关于React的书，今年，我将挑战自己，将其归纳为一片文章。
+ 本文不会介绍React以及你为什么应该学习它,而是对那些已经熟悉JavaScript并了解DOM API的开发人员的React.js知识的介绍。
+ 下面所有示例的代码都会都有标注以供参考。它们纯粹是为了示例，大多数都可以有更好的写法。
+一、 React 是基于组件的 React是基于可重用组件的概念而设计">
   
     <link rel="alternative" href="/atom.xml" title="izqcool blog" type="application/atom+xml">
   
@@ -211,50 +172,91 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-关于React.js的基本概念都在这篇文章中" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关于React.js的基本概念都在这篇文章中
+    </h1>
+  
+
+        
+        <a href="/2018/03/07/关于React.js的基本概念都在这篇文章中/" class="archive-article-date">
+  	<time datetime="2018-03-07T15:06:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-07</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>about me</title>
-    <!--<link rel="stylesheet" href="style/base.css">-->
-    <link rel="stylesheet" href="style/index.css">
-</head>
-<body>
-    <div id="about">
-        <h1>about me:</h1>
-        <ul>
-            <li>name:</li>
-            <li>左 强</li>
-        </ul>
-        <ul>
-            <li>born:</li>
-            <li>1994.08.26</li>
-        </ul>
-        <ul>
-            <li>address:</li>
-            <li>重庆</li>
-        </ul>
-        <ul>
-            <li>ability:</li>
-            <li>web前端</li>
-        </ul>
-        <ul>
-            <li>university:</li>
-            <li>重庆邮电大学</li>
-        </ul>
-        <ul>
-            <li>status:</li>
-            <li>student</li>
-        </ul>
-    </div>
+        <p> 去年我写了一本差不多一百来页关于React的书，今年，我将挑战自己，将其归纳为一片文章。</p>
+<p> 本文不会介绍React以及你为什么应该学习它,而是对那些已经熟悉JavaScript并了解DOM API的开发人员的React.js知识的介绍。</p>
+<p> 下面所有示例的代码都会都有标注以供参考。它们纯粹是为了示例，大多数都可以有更好的写法。</p>
+<h3 id="一、-React-是基于组件的"><a href="#一、-React-是基于组件的" class="headerlink" title="一、 React 是基于组件的"></a>一、 React 是基于组件的</h3><p> React是基于可重用组件的概念而设计的，你定义一些小的组件并将它们组合成打的组件。</p>
+<p> 所有的组件都是可复用的，即使放在不同的项目中也是如此。</p>
+<p> React组件最简单的形式是一个JavaScript函数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Example 1</span></div><div class="line"><span class="comment">// https://jscomplete.com/repl?j=Sy3QAdKHW</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Button</span> (<span class="params">props</span>) </span>&#123;</div><div class="line">  <span class="comment">// Returns a DOM element here. For example:</span></div><div class="line">  <span class="keyword">return</span> &lt;button type="submit"&gt;&#123;props.label&#125;&lt;/button&gt;;</div><div class="line">&#125;</div><div class="line"><span class="comment">// To render the Button component to the browser</span></div><div class="line">ReactDOM.render(&lt;Button label="Save" /&gt;, mountNode)</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>下面介绍用于按钮标签的花括号。 你现在不需要考虑他们， ReactDOM也会在后面解释，但如果你想测试这个例子和所有接下来的示例代码，上面的渲染函数就是你所需要的。</p>
+<p>ReactDOM.render的第二个参数是插入模板的目标位置（DOM节点），在<a href="https://jscomplete.com/react/" target="_blank" rel="external"> jsComplete React Playground</a>中，你可以使用特殊的变量mountNode。</p>
+<p>关于示例1有以下几点需要注意：</p>
+<ul>
+<li>组件名称以大写字母开头。这样做是必须的，可以避免HTML元素和React元素的混淆。小写字母开头是为HTML元素保留的，如果尝试命名React组件的名称为“button”,你会发现ReactDOM将会忽略该函数并呈现一个常规的空HTML按钮。</li>
+<li>和HTML元素一样，每个组件都还可以接受一个属性列表。在React中，这个属性被称为props,你可以随意命名它。</li>
+<li>在上面的Button函数组件的返回输出中编写了类似HTML的代码， 但这既不是JavaScript也不是HTML，甚至不是React.js。但是，它非常流行，因此它成为了React应用程序的默认设置。，它被称为<a href="https://facebook.github.io/jsx/" target="_blank" rel="external">JSX</a>，它是一个JavaScript扩展。</li>
+</ul>
+<h3 id="二、-什么是JSX？"><a href="#二、-什么是JSX？" class="headerlink" title="二、 什么是JSX？"></a>二、 什么是JSX？</h3><p>上面的示例1可以在没有JSX的纯React.js中编写，如下所示：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Example 2 -  React component without JSX</span></div><div class="line"><span class="comment">// https://jscomplete.com/repl?j=HyiEwoYB-</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Button</span> (<span class="params">props</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> React.createElement(</div><div class="line">    <span class="string">"button"</span>,</div><div class="line">    &#123; <span class="attr">type</span>: <span class="string">"submit"</span> &#125;,</div><div class="line">    props.label</div><div class="line">  );</div><div class="line">&#125;</div><div class="line"><span class="comment">// To use Button, you would do something like</span></div><div class="line">ReactDOM.render(</div><div class="line">  React.createElement(Button, &#123; <span class="attr">label</span>: <span class="string">"Save"</span> &#125;),</div><div class="line">  mountNode</div><div class="line">);</div></pre></td></tr></table></figure></p>
+<p>createElement函数是React主要的API。它是你需要学习的8个重要的API中的一个，没错，React中的API就是这么的少。</p>
+<p>就像DOM本身有一个document.createElement函数来创建一个由标签名称指定的元素一样，React的createElement函数是一个可以执行document.createElement的高级函数，但它也可以用来创建一个元素来表示一个React组件。创建上面例2中的Button组件时，就是后者的体现。</p>
+<p>与document.createElement不同，React的createElement接受第二个参数后的动态数量的参数来表示创建的元素的子元素。 所以createElement实际上创建了一棵树。</p>
+<p>这里有一个例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Example 3 -  React’s createElement API</span></div><div class="line"><span class="comment">// https://jscomplete.com/repl?j=r1GNoiFBb</span></div><div class="line"><span class="keyword">const</span> InputForm = React.createElement(</div><div class="line">  <span class="string">"form"</span>,</div><div class="line">  &#123; <span class="attr">target</span>: <span class="string">"_blank"</span>, <span class="attr">action</span>: <span class="string">"https://google.com/search"</span> &#125;,</div><div class="line">  React.createElement(<span class="string">"div"</span>, <span class="literal">null</span>, <span class="string">"Enter input and click Search"</span>),</div><div class="line">  React.createElement(<span class="string">"input"</span>, &#123; <span class="attr">name</span>: <span class="string">"q"</span>, <span class="attr">className</span>: <span class="string">"input"</span> &#125;),</div><div class="line">  React.createElement(Button, &#123; <span class="attr">label</span>: <span class="string">"Search"</span> &#125;)</div><div class="line">);</div><div class="line"><span class="comment">// InputForm uses the Button component, so we need that too:</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Button</span> (<span class="params">props</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> React.createElement(</div><div class="line">    <span class="string">"button"</span>,</div><div class="line">    &#123; <span class="attr">type</span>: <span class="string">"submit"</span> &#125;,</div><div class="line">    props.label</div><div class="line">  );</div><div class="line">&#125;</div><div class="line"><span class="comment">// Then we can use InputForm directly with .render</span></div><div class="line">ReactDOM.render(InputForm, mountNode);</div></pre></td></tr></table></figure></p>
+<p>上面的示例有一下需要注意的地方：</p>
+<ul>
+<li>InputForm不是一个React组件; 它只是一个React元素。 这就是为什么我们直接在ReactDOM.render调用中使用它，而不是使用&lt;InputForm/&gt;</li>
+<li>React.createElement函数在接受了多个参数。 它从第三个参数开始的参数列表包含创建元素的子项列表。</li>
+<li>我们能够嵌套React.createElement调用，因为它全部是JavaScript。</li>
+<li>当元素不需要属性或props时，React.createElement的第二个参数可以为null或空对象。</li>
+<li>我们可以将HTML元素与React元素混合使用。</li>
+<li>React的API试图尽可能地接近DOM API，这就是为什么我们使用className而不是class作为input元素的原因。我们都希望React的API成为DOM API本身的一部分， 因为，它比DOM API 更好。</li>
+</ul>
+<p>上面的代码是基于你在包含React库时浏览器可以理解的内容， 浏览器不处理任何JSX业务。然而，我们喜欢看到和使用HTML而不是这些createElement调用（想象一下你用document.createElement构建一个网站）。这就是JSX存在的原因， 与使用React.createElement编写上述表单不同，我们可以使用与HTML非常相似的语法编写它：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Example 4 - JSX (compare with Example 3)</span></div><div class="line"><span class="comment">// https://jscomplete.com/repl?j=SJWy3otHW</span></div><div class="line"><span class="keyword">const</span> InputForm =</div><div class="line">  &lt;form target="_blank" action="https://google.com/search"&gt;</div><div class="line">    &lt;div&gt;Enter input and click Search&lt;/div&gt;</div><div class="line">    &lt;input name="q" className="input" /&gt;</div><div class="line">    &lt;Button label="Search" /&gt;</div><div class="line">  &lt;/form&gt;;</div><div class="line">// InputForm "still" uses the Button component, so we need that too.</div><div class="line">// Either JSX or normal form would do</div><div class="line">function Button (props) &#123;</div><div class="line">  // Returns a DOM element here. For example:</div><div class="line">  return &lt;button type="submit"&gt;&#123;props.label&#125;&lt;/button&gt;;</div><div class="line">&#125;</div><div class="line">// Then we can use InputForm directly with .render</div><div class="line">ReactDOM.render(InputForm, mountNode);</div></pre></td></tr></table></figure>
+<p>请注意以下几点：</p>
+<ul>
+<li>它并不是HTML。 例如，我们仍然在使用className而不是class。</li>
+<li>我们仍在考虑JavaScript上的HTML如上所示。 看看我如何在最后添加分号。</li>
+</ul>
+<p>我们上面写的（例4）是JSX。 然而，我们对浏览器采取的是它的编译版本（例3）。 为了实现这一点，我们需要使用预处理器将JSX版本转换为React.createElement版本。</p>
+<p>这就是JSX。 这是一个折中的方案，它允许我们用类似于HTML的语法编写我们的React组件，这是一种相当不错的方式。</p>
+<p>顺便提一下，JSX可以独立使用。它不是React的特有的语法。</p>
+<h3 id="三、您可以在JSX中的任何地方使用JavaScript表达式"><a href="#三、您可以在JSX中的任何地方使用JavaScript表达式" class="headerlink" title="三、您可以在JSX中的任何地方使用JavaScript表达式"></a>三、您可以在JSX中的任何地方使用JavaScript表达式</h3><p>在JSX中，您可以在一对大括号内使用任何JavaScript表达式。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// Example 5 -  Using JavaScript expressions in JSX</div><div class="line">// https://jscomplete.com/repl?j=SkNN3oYSW</div><div class="line">const RandomValue = () =&gt; </div><div class="line">  &lt;div&gt;</div><div class="line">    &#123; Math.floor(Math.random() * 100) &#125;</div><div class="line">  &lt;/div&gt;;</div><div class="line">// To use it:</div><div class="line">ReactDOM.render(&lt;RandomValue /&gt;, mountNode);</div></pre></td></tr></table></figure></p>
+<p>任何JavaScript表达式都可以放在大括号内。 这相当于JavaScript模板文字中的$ {}<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="external">插值语法</a>。</p>
+<p>这是JSX内唯一的约束：只有表达式。 因此，您不能使用常规if语句，但三元表达式可以。</p>
+<p>JavaScript变量也是表达式，所以当组件接收到一个props列表（RandomValue组件没有，props是可选的）时，你可以在花括号中使用这些props。 我们在上面的Button组件中这样做过（例1）。</p>
+<p>JavaScript对象也是表达式。 有时我们在花括号内使用JavaScript对象，这使得它看起来像双花括号，但它实际上只是一个花括号内的对象。 一个视力是将一个CSS样式对象传递给React中的特殊样式属性：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// Example 6 - An object passed to the special React style prop</div><div class="line">// https://jscomplete.com/repl?j=S1Kw2sFHb</div><div class="line">const ErrorDisplay = (&#123;message&#125;) =&gt;</div><div class="line">  &lt;div style=&#123; &#123; color: 'red', backgroundColor: 'yellow' &#125; &#125;&gt;</div><div class="line">    &#123;message&#125;</div><div class="line">  &lt;/div&gt;;</div><div class="line">// Use it:</div><div class="line">ReactDOM.render(</div><div class="line">  &lt;ErrorDisplay </div><div class="line">    message="These aren't the droids you're looking for" </div><div class="line">  /&gt;,</div><div class="line">  mountNode</div><div class="line">);</div></pre></td></tr></table></figure>
+<p>请注意，我是如何将props中的message解构出来的。 还要注意上面的style属性是如何特殊的（同样，它不是HTML，它更接近于DOM API）。 我们使用一个对象作为style属性的值。 该对象定义了样式，就好像我们在JavaScript中那样。</p>
+<p>你甚至可以在JSX中使用React元素，因为这也是一个表达式。 请记住，React元素本质上是一个函数调用：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">// Example 7 - Using a React element within &#123;&#125;</div><div class="line">// https://jscomplete.com/repl?j=SkTLpjYr-</div><div class="line">const MaybeError = (&#123;errorMessage&#125;) =&gt;</div><div class="line">  &lt;div&gt;</div><div class="line">    &#123;errorMessage &amp;&amp; &lt;ErrorDisplay message=&#123;errorMessage&#125; /&gt;&#125;</div><div class="line">  &lt;/div&gt;;</div><div class="line">  </div><div class="line">// The MaybeError component uses the ErrorDisplay component:</div><div class="line">const ErrorDisplay = (&#123;message&#125;) =&gt;</div><div class="line">  &lt;div style=&#123; &#123; color: 'red', backgroundColor: 'yellow' &#125; &#125;&gt;</div><div class="line">    &#123;message&#125;</div><div class="line">  &lt;/div&gt;;</div><div class="line">// Now we can use the MaybeError component:</div><div class="line">ReactDOM.render(</div><div class="line">  &lt;MaybeError</div><div class="line">    errorMessage=&#123;Math.random() &gt; 0.5 ? 'Not good' : ''&#125;</div><div class="line">  /&gt;,</div><div class="line">  mountNode</div><div class="line">);</div></pre></td></tr></table></figure>
+<p>如果传递给它的errorMessage字符串和空div，上面的MaybeError组件将只显示ErrorDisplay组件。 React认为{true}，{false}，{undefined}和{null}是有效的元素子元素，它们不会呈现任何内容。</p>
+<p>你也可以在JSX中使用JavaScript函数，例如（map, reduce, filter, concat等）：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// Example 8 - Using an array map inside &#123;&#125;</div><div class="line">// https://jscomplete.com/repl?j=SJ29aiYH-</div><div class="line">const Doubler = (&#123;value=[1, 2, 3]&#125;) =&gt;</div><div class="line">  &lt;div&gt;</div><div class="line">    &#123;value.map(e =&gt; e * 2)&#125;</div><div class="line">  &lt;/div&gt;;</div><div class="line">// Use it</div><div class="line">ReactDOM.render(&lt;Doubler /&gt;, mountNode);</div></pre></td></tr></table></figure></p>
+<p>请注意我是如何通过设置默认的prop来获取value的，同时也注意我在div内使用了箭头函数，react支持这样的语法，文本节点中将插入翻倍的value值。</p>
+<h3 id="四、你可以使用class编写react组件"><a href="#四、你可以使用class编写react组件" class="headerlink" title="四、你可以使用class编写react组件"></a>四、你可以使用class编写react组件</h3><p>用函数编写组件非常适合简单的需求，但是有时候我们会面对更为复杂的场景。React支出使用JavaScript的class语法构建组件，我们使用class语法将例一中的Botton组件改写为如下所示：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Example 9 - Creating components using JavaScript classes</span></div><div class="line"><span class="comment">// https://jscomplete.com/repl?j=ryjk0iKHb</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Button</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> &lt;button&gt;&#123;this.props.label&#125;&lt;/button&gt;;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// Use it (same syntax)</span></div><div class="line">ReactDOM.render(&lt;Button label="Save" /&gt;, mountNode);</div></pre></td></tr></table></figure></p>
+<p>class的语法很简单，它定义一个继承至React.Component类（有一个你需要学习的React API），该类定义了单个实例函数rengde()，并且render函数返回虚拟DOM元素。每次当我们使用这个基于类的Button组件时（例如，通过执行<button ...="">），React将实例化一个对象，该对象在DOM树中渲染DOM元素。</button></p>
+<p>这就是为什么我们在上面呈现的输出中在JSX中使用this.props.label的原因。因为通过类组件呈现的每个元素都会获取一个名为props的特殊实例属性，该属性保存创建时传递给该元素的所有值。</p>
+<p>由于我们每次调用组件时都会生成一个实例，所以我们可以根据需要自定义该实例。 例如，我们可以在通过使用常规JavaScript构造函数构造它对其进行自定义：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Example 10 -  Customizing a component instance</span></div><div class="line"><span class="comment">// https://jscomplete.com/repl?j=rko7RsKS-</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Button</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</div><div class="line">  <span class="keyword">constructor</span>(props) &#123;</div><div class="line">    <span class="keyword">super</span>(props);</div><div class="line">    <span class="keyword">this</span>.id = <span class="built_in">Date</span>.now();</div><div class="line">  &#125;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> &lt;button id=&#123;this.id&#125;&gt;&#123;this.props.label&#125;&lt;/button&gt;;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// Use it</span></div><div class="line">ReactDOM.render(&lt;Button label="Save" /&gt;, mountNode);</div></pre></td></tr></table></figure></p>
+<p>我们还可以定义类函数并在我们希望的任何地方使用它们，甚至是在返回的JSX输出中：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Example 11 — Using class properties</span></div><div class="line"><span class="comment">// https://jscomplete.com/repl?j=H1YDCoFSb</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Button</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</div><div class="line">  clickCounter = <span class="number">0</span>;</div><div class="line">  handleClick = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">`Clicked: <span class="subst">$&#123;++<span class="keyword">this</span>.clickCounter&#125;</span>`</span>);</div><div class="line">  &#125;;</div><div class="line">  </div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      &lt;button id=&#123;this.id&#125; onClick=&#123;this.handleClick&#125;&gt;</div><div class="line">        &#123;this.props.label&#125;</div><div class="line">      &lt;/button&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// Use it</span></div><div class="line">ReactDOM.render(&lt;Button label="Save" /&gt;, mountNode);</div></pre></td></tr></table></figure></p>
+<p>关于例11，有以下几点需要注意：</p>
+<ul>
+<li>handleClick函数是使用JavaScript中新建议的类字段语法编写的，但由于许多原因，这是访问组件实例的最佳选择（感谢箭头功能），但是你需要项Babel这样的编译器来编译它。</li>
+<li>我们还使用相同的类字段语法定义了clickCounter实例变量。</li>
+<li>当我们将handleClick函数指定为特殊的onClick React属性的值时，我们没有调用它。 我们传递了对handleClick函数的引用。 在这里直接调用函数是使用React时最常见的错误之一。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Wrong:</span></div><div class="line">onClick=&#123;<span class="keyword">this</span>.handleClick()&#125;</div><div class="line"><span class="comment">// Right:</span></div><div class="line">onClick=&#123;<span class="keyword">this</span>.handleClick&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
 
-</body>
-</html>
       
 
       
@@ -283,6 +285,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">react 翻译</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -333,7 +346,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://izqcool.com/about/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://izqcool.com/2018/03/07/关于React.js的基本概念都在这篇文章中/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -345,6 +358,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/05/在javascript中使用undefined的七个技巧/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -353,7 +376,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="undefined" data-title="" data-url="http://izqcool.com/about/index.html"></div>
+	<div class="ds-thread" data-thread-key="关于React.js的基本概念都在这篇文章中" data-title="关于React.js的基本概念都在这篇文章中" data-url="http://izqcool.com/2018/03/07/关于React.js的基本概念都在这篇文章中/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -395,7 +418,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

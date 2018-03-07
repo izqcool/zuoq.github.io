@@ -164,6 +164,117 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-关于React.js的基本概念都在这篇文章中" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/07/关于React.js的基本概念都在这篇文章中/">关于React.js的基本概念都在这篇文章中</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/07/关于React.js的基本概念都在这篇文章中/" class="archive-article-date">
+  	<time datetime="2018-03-07T15:06:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> 去年我写了一本差不多一百来页关于React的书，今年，我将挑战自己，将其归纳为一片文章。</p>
+<p> 本文不会介绍React以及你为什么应该学习它,而是对那些已经熟悉JavaScript并了解DOM API的开发人员的React.js知识的介绍。</p>
+<p> 下面所有示例的代码都会都有标注以供参考。它们纯粹是为了示例，大多数都可以有更好的写法。</p>
+<h3 id="一、-React-是基于组件的"><a href="#一、-React-是基于组件的" class="headerlink" title="一、 React 是基于组件的"></a>一、 React 是基于组件的</h3><p> React是基于可重用组件的概念而设计的，你定义一些小的组件并将它们组合成打的组件。</p>
+<p> 所有的组件都是可复用的，即使放在不同的项目中也是如此。</p>
+<p> React组件最简单的形式是一个JavaScript函数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Example 1</span></div><div class="line"><span class="comment">// https://jscomplete.com/repl?j=Sy3QAdKHW</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Button</span> (<span class="params">props</span>) </span>&#123;</div><div class="line">  <span class="comment">// Returns a DOM element here. For example:</span></div><div class="line">  <span class="keyword">return</span> &lt;button type="submit"&gt;&#123;props.label&#125;&lt;/button&gt;;</div><div class="line">&#125;</div><div class="line"><span class="comment">// To render the Button component to the browser</span></div><div class="line">ReactDOM.render(&lt;Button label="Save" /&gt;, mountNode)</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2018/03/07/关于React.js的基本概念都在这篇文章中/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">react 翻译</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/07/关于React.js的基本概念都在这篇文章中/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-在javascript中使用undefined的七个技巧" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="在JavaScript中使用undefined的七个技巧"><a href="#在JavaScript中使用undefined的七个技巧" class="headerlink" title="在JavaScript中使用undefined的七个技巧"></a>在JavaScript中使用undefined的七个技巧</h2><blockquote>
+<p>在最近的开发中，遇到了很多数据逻辑处理的问题，涉及到了大量的判断，经常要对请求返回的数据做异常判断，在根据数据渲染视图时，大量的undefined判断让人很难受，正巧发现了这篇很不错的文章，将它翻译出来。</p>
+<p>当我在八年之前学习JavaScript的时候，undefinded和null都表示“空值”让我很费解，它们的具体差异是什么？它们看上去都定义了“空值”，并且undefined==null的结果为true.</p>
+<p>像Ruby，Python或Java等大多数语言都有一个空值（零或空），这似乎是一个合理的方法;</p>
+<p>在JavaScript中，当访问尚未初始化的变量或对象属性时，解释器返回undefined。 例如：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> company;  </div><div class="line">company;    <span class="comment">// =&gt; undefined  </span></div><div class="line"><span class="keyword">let</span> person = &#123; <span class="attr">name</span>: <span class="string">'John Smith'</span> &#125;;  </div><div class="line">person.age; <span class="comment">// =&gt; undefined</span></div></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/02/05/在javascript中使用undefined的七个技巧/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-ES6重要知识总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -454,179 +565,10 @@
 
 
   
-    <article id="post-js作用域与作用域链" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/13/js作用域与作用域链/">Js作用域与作用域链</a>
-    </h1>
-  
-
-        
-        <a href="/2016/05/13/js作用域与作用域链/" class="archive-article-date">
-  	<time datetime="2016-05-13T12:50:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h4><blockquote>
-<p>在JavaScript的学习中，作用域和作用域链是非常重要的两个基础概念，理解好这两个概念对我们掌握变量提升、闭包等概念有很大的帮助。</p>
-</blockquote>
-<ul>
-<li><p>作用域：</p>
-<ol>
-<li>概念：<ul>
-<li>变量和函数的可访问范围，即作用域控制着变量和函数的可见性和生命周期。</li>
-</ul>
-</li>
-<li>分类：<ul>
-<li>全局作用域：（在代码的任何地方都可以访问到）：<ul>
-<li>1.所有未定义直接赋值的变量会自动生命为全局作用域</li>
-<li>2.所有window对象的属性</li>
-</ul>
-</li>
-<li>局部作用域：（只用在固定的代码片段中可以访问，常见于函数内部，习惯叫做函数作用域）</li>
-</ul>
-</li>
-<li><p><strong>注意：</strong></p>
-<ul>
-<li>js里是是没有块级作用域的，定义在for()循环内的变量能够在for()循环外访问到：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++) &#123;</div><div class="line">	<span class="keyword">var</span> color = <span class="string">"blue"</span>;</div><div class="line">&#125;	</div><div class="line"><span class="built_in">console</span>.log(color);</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>输出结果为blue,可见可以访问到代码块内声明的变量。</p>
-</li>
-</ol>
-</li>
-</ul>
-<hr>
-        
-          <a class="article-more-a" href="/2016/05/13/js作用域与作用域链/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/05/13/js作用域与作用域链/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-使用心得" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/18/hexo-使用心得/">Hexo:使用心得</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/18/hexo-使用心得/" class="archive-article-date">
-  	<time datetime="2016-03-18T11:27:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://hexo.io/">Hexo</a>是一款简单、快速、强大的<a href="https://nodejs.org/en/">Node.js</a>静态博客框架,它具有以下特点:</p>
-<ul>
-<li>快速<ul>
-<li>Hexo基于Node.js，支持多进程，几百篇文章也可以秒生成。</li>
-</ul>
-</li>
-<li>撰写流畅<ul>
-<li>支持GitHub Flavored Markdown和所有Octopress的插件。</li>
-</ul>
-</li>
-<li>扩展性好<ul>
-<li>Hexo支持EJS、Swig和Stylus。通过插件支持Haml、Jade和Less。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p>基于以上特点，Hexo得到了很多程序猿的青睐，网上关于Hexo的教程更是不胜枚举。博主本次对网上一些比较好的资源进行了梳理，内容如下:</p>
-        
-          <a class="article-more-a" href="/2016/03/18/hexo-使用心得/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/18/hexo-使用心得/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -637,7 +579,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 izqcool
+    		&copy; 2018 izqcool
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -724,11 +666,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color4">react 翻译</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">

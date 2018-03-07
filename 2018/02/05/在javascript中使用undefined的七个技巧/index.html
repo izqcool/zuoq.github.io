@@ -8,64 +8,22 @@
   <link rel="dns-prefetch" href="http://izqcool.com">
   <title>izqcool blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="about me
-    
-    
-
-
-    
-        about me:
-        
-            name:
-            左 强
-        
-        
-            born:
-            1994.08.26
-        
-        
-            address:">
-<meta property="og:type" content="website">
+  <meta name="description" content="在JavaScript中使用undefined的七个技巧
+在最近的开发中，遇到了很多数据逻辑处理的问题，涉及到了大量的判断，经常要对请求返回的数据做异常判断，在根据数据渲染视图时，大量的undefined判断让人很难受，正巧发现了这篇很不错的文章，将它翻译出来。
+当我在八年之前学习JavaScript的时候，undefinded和null都表示“空值”让我很费解，它们的具体差异是什么？它们看上去都">
+<meta property="og:type" content="article">
 <meta property="og:title" content="izqcool blog">
-<meta property="og:url" content="http://izqcool.com/about/index.html">
+<meta property="og:url" content="http://izqcool.com/2018/02/05/在javascript中使用undefined的七个技巧/index.html">
 <meta property="og:site_name" content="izqcool blog">
-<meta property="og:description" content="about me
-    
-    
-
-
-    
-        about me:
-        
-            name:
-            左 强
-        
-        
-            born:
-            1994.08.26
-        
-        
-            address:">
-<meta property="og:updated_time" content="2016-03-17T15:48:36.000Z">
+<meta property="og:description" content="在JavaScript中使用undefined的七个技巧
+在最近的开发中，遇到了很多数据逻辑处理的问题，涉及到了大量的判断，经常要对请求返回的数据做异常判断，在根据数据渲染视图时，大量的undefined判断让人很难受，正巧发现了这篇很不错的文章，将它翻译出来。
+当我在八年之前学习JavaScript的时候，undefinded和null都表示“空值”让我很费解，它们的具体差异是什么？它们看上去都">
+<meta property="og:updated_time" content="2018-02-05T03:21:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="izqcool blog">
-<meta name="twitter:description" content="about me
-    
-    
-
-
-    
-        about me:
-        
-            name:
-            左 强
-        
-        
-            born:
-            1994.08.26
-        
-        
-            address:">
+<meta name="twitter:description" content="在JavaScript中使用undefined的七个技巧
+在最近的开发中，遇到了很多数据逻辑处理的问题，涉及到了大量的判断，经常要对请求返回的数据做异常判断，在根据数据渲染视图时，大量的undefined判断让人很难受，正巧发现了这篇很不错的文章，将它翻译出来。
+当我在八年之前学习JavaScript的时候，undefinded和null都表示“空值”让我很费解，它们的具体差异是什么？它们看上去都">
   
     <link rel="alternative" href="/atom.xml" title="izqcool blog" type="application/atom+xml">
   
@@ -211,50 +169,18 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-在javascript中使用undefined的七个技巧" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>about me</title>
-    <!--<link rel="stylesheet" href="style/base.css">-->
-    <link rel="stylesheet" href="style/index.css">
-</head>
-<body>
-    <div id="about">
-        <h1>about me:</h1>
-        <ul>
-            <li>name:</li>
-            <li>左 强</li>
-        </ul>
-        <ul>
-            <li>born:</li>
-            <li>1994.08.26</li>
-        </ul>
-        <ul>
-            <li>address:</li>
-            <li>重庆</li>
-        </ul>
-        <ul>
-            <li>ability:</li>
-            <li>web前端</li>
-        </ul>
-        <ul>
-            <li>university:</li>
-            <li>重庆邮电大学</li>
-        </ul>
-        <ul>
-            <li>status:</li>
-            <li>student</li>
-        </ul>
-    </div>
-
-</body>
-</html>
+        <h2 id="在JavaScript中使用undefined的七个技巧"><a href="#在JavaScript中使用undefined的七个技巧" class="headerlink" title="在JavaScript中使用undefined的七个技巧"></a>在JavaScript中使用undefined的七个技巧</h2><blockquote>
+<p>在最近的开发中，遇到了很多数据逻辑处理的问题，涉及到了大量的判断，经常要对请求返回的数据做异常判断，在根据数据渲染视图时，大量的undefined判断让人很难受，正巧发现了这篇很不错的文章，将它翻译出来。</p>
+<p>当我在八年之前学习JavaScript的时候，undefinded和null都表示“空值”让我很费解，它们的具体差异是什么？它们看上去都定义了“空值”，并且undefined==null的结果为true.</p>
+<p>像Ruby，Python或Java等大多数语言都有一个空值（零或空），这似乎是一个合理的方法;</p>
+<p>在JavaScript中，当访问尚未初始化的变量或对象属性时，解释器返回undefined。 例如：</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> company;  </div><div class="line">company;    <span class="comment">// =&gt; undefined  </span></div><div class="line"><span class="keyword">let</span> person = &#123; <span class="attr">name</span>: <span class="string">'John Smith'</span> &#125;;  </div><div class="line">person.age; <span class="comment">// =&gt; undefined</span></div></pre></td></tr></table></figure>
       
 
       
@@ -333,7 +259,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://izqcool.com/about/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://izqcool.com/2018/02/05/在javascript中使用undefined的七个技巧/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -345,6 +271,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2018/03/07/关于React.js的基本概念都在这篇文章中/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          关于React.js的基本概念都在这篇文章中
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/05/ES6重要知识总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ES6重要知识总结</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 
 
@@ -353,7 +298,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="undefined" data-title="" data-url="http://izqcool.com/about/index.html"></div>
+	<div class="ds-thread" data-thread-key="在javascript中使用undefined的七个技巧" data-title="" data-url="http://izqcool.com/2018/02/05/在javascript中使用undefined的七个技巧/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -395,7 +340,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
