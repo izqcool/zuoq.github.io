@@ -6,17 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://izqcool.com">
-  <title>Archives: 2018/5 | izqcool blog</title>
+  <title>《你不知道的JavaScript》(上卷第一部分) | izqcool blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="dsadad">
-<meta property="og:type" content="website">
-<meta property="og:title" content="izqcool blog">
-<meta property="og:url" content="http://izqcool.com/archives/2018/05/index.html">
+  <meta name="description" content="1.作用域是什么引擎在查询变量的时候分为两种方式，LHS查询和RHS查询，RHS查询是简单地查找某个变量的值，而LHS查寻是试图 找到变量的容器本身,从而可以对其赋值。RHS并不是真正意义上的“赋值操作的右侧”,更准确地说是“非左侧”，可以理解为“得到某某的值”。1consle.log(a);
+上述代码中对a的引用是RHS查询，因为这里只是简单的拿到a的值是多少，并没有对a进行赋值；1a = 2;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《你不知道的JavaScript》(上卷第一部分)">
+<meta property="og:url" content="http://izqcool.com/2018/10/17/《你不知道的JavaScript》(上卷第一部分)/index.html">
 <meta property="og:site_name" content="izqcool blog">
-<meta property="og:description" content="dsadad">
+<meta property="og:description" content="1.作用域是什么引擎在查询变量的时候分为两种方式，LHS查询和RHS查询，RHS查询是简单地查找某个变量的值，而LHS查寻是试图 找到变量的容器本身,从而可以对其赋值。RHS并不是真正意义上的“赋值操作的右侧”,更准确地说是“非左侧”，可以理解为“得到某某的值”。1consle.log(a);
+上述代码中对a的引用是RHS查询，因为这里只是简单的拿到a的值是多少，并没有对a进行赋值；1a = 2;">
+<meta property="og:image" content="https://dev.anumbrella.net/pic/zuoyongyu.png">
+<meta property="og:updated_time" content="2018-10-30T09:53:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="izqcool blog">
-<meta name="twitter:description" content="dsadad">
+<meta name="twitter:title" content="《你不知道的JavaScript》(上卷第一部分)">
+<meta name="twitter:description" content="1.作用域是什么引擎在查询变量的时候分为两种方式，LHS查询和RHS查询，RHS查询是简单地查找某个变量的值，而LHS查寻是试图 找到变量的容器本身,从而可以对其赋值。RHS并不是真正意义上的“赋值操作的右侧”,更准确地说是“非左侧”，可以理解为“得到某某的值”。1consle.log(a);
+上述代码中对a的引用是RHS查询，因为这里只是简单的拿到a的值是多少，并没有对a进行赋值；1a = 2;">
+<meta name="twitter:image" content="https://dev.anumbrella.net/pic/zuoyongyu.png">
   
     <link rel="alternative" href="/atom.xml" title="izqcool blog" type="application/atom+xml">
   
@@ -162,60 +168,205 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-《你不知道的JavaScript》(上卷第一部分)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/20/hexo-520随便写点/" class="archive-article-date">
-  	<time datetime="2018-05-20T15:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-20</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/20/hexo-520随便写点/">520随便写点</a>
+    <h1 class="article-title" itemprop="name">
+      《你不知道的JavaScript》(上卷第一部分)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/10/17/《你不知道的JavaScript》(上卷第一部分)/" class="archive-article-date">
+  	<time datetime="2018-10-16T16:03:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-作用域是什么"><a href="#1-作用域是什么" class="headerlink" title="1.作用域是什么"></a>1.作用域是什么</h2><p>引擎在查询变量的时候分为两种方式，LHS查询和RHS查询，RHS查询是简单地查找某个变量的值，而LHS查寻是试图 找到变量的容器本身,从而可以对其赋值。RHS并不是真正意义上的“赋值操作的右侧”,更准确地说是“非左侧”，可以理解为“得到某某的值”。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">consle.log(a);</div></pre></td></tr></table></figure></p>
+<p>上述代码中对a的引用是RHS查询，因为这里只是简单的拿到a的值是多少，并没有对a进行赋值；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">a = 2;</div></pre></td></tr></table></figure></p>
+<p>上述代码对a的引用为LHS查询，这里对a进行了赋值。</p>
+<a id="more"></a>
+<p><strong>LHS和RHS 的含义是“赋值操作的左侧或右侧”并不一定意味着就是“= 赋值操作符的左侧或右侧”，因为操作还有其他几种形式。</strong></p>
+<p><img src="https://dev.anumbrella.net/pic/zuoyongyu.png" alt=""></p>
+<p>上图展示了嵌套作用域链，LHS和RHS引用都会在当前楼层进行查找,如果没有找到,就会坐电梯前往上一层楼, 如果还是没有找到就继续向上,以此类推。一旦抵达顶层(全局作用域),可能找到了你 所需的变量,也可能没找到,但无论如何查找过程都将停止。</p>
+<h2 id="2-词法作用"><a href="#2-词法作用" class="headerlink" title="2.词法作用"></a>2.词法作用</h2><p>简单地说,词法作用域就是定义在词法阶段的作用域。换句话说,词法作用域是写代码时将变量和块作用域写在哪里来决定的,因此当词法分析器处理代码时会保持作用域不变(大部分情况下是这样的)。</p>
+<p>作用域查找始终从运行时所处的最内部作用域开始,逐级向外或者说向上进行,直到遇见 第一个匹配的标识符为止。</p>
+<p><strong>无论函数在哪里被调用,也无论它如何被调用,它的词法作用域都只由函数被声明时所处的位置决定。</strong></p>
+<h2 id="3-函数作用域和块作用域"><a href="#3-函数作用域和块作用域" class="headerlink" title="3.函数作用域和块作用域"></a>3.函数作用域和块作用域</h2><p>函数作用域是指属于一个函数的全部变量都可以在整个函数的范围内使用及复用(在嵌套的作用域中也可以使用)。</p>
+<p>块级作用域：变量只在一段代码块中有效，不干扰其他代码块。块级作用域有一下几种：</p>
+<ol>
+<li>with: 用with从对象中创建出的作用域仅在 with 声明中而非外 部作用域中有效；</li>
+<li>try/catch: try/catch的catch 分句会创建一个块作用域,其中声明的变量仅在catch内部有效;</li>
+<li>let关键字可以将变量绑定到所在的任意作用域中(通常是{..}内部),换句话说,let为其声明的变量隐式地添加了所在的块作用域。</li>
+<li>const；</li>
+<li>闭包；</li>
+</ol>
+<p>let绑定作用域代码示例：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> varTest = <span class="string">'varTest'</span>;</div><div class="line">	<span class="keyword">let</span> letTest = <span class="string">'letTest'</span>;</div><div class="line">	</div><div class="line">	&#123;</div><div class="line">		<span class="keyword">var</span> varTest = <span class="string">'varTest changed'</span>;</div><div class="line">		<span class="keyword">let</span> letTest = <span class="string">'letTest changed'</span>;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="built_in">console</span>.log(varTest); <span class="comment">//varTest changed  在&#123;&#125;中的varTest和外层作用域不相同</span></div><div class="line">	<span class="built_in">console</span>.log(letTest); <span class="comment">//letTest   在&#123;&#125;中的letTest是独立的块作用域</span></div><div class="line">&#125;)();</div></pre></td></tr></table></figure></p>
+<h2 id="4-提升"><a href="#4-提升" class="headerlink" title="4.提升"></a>4.提升</h2><p>直觉上会认为JavaScript代码在执行时是由上到下一行一行执行的。但实际上这并不完全正确。在JavaScript中，包括变量和函数在内的所有声明都会在任何代码被执行前首先被处理；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a = <span class="number">2</span>;</div><div class="line"><span class="keyword">var</span> a;</div><div class="line"><span class="built_in">console</span>.log(a);  <span class="comment">// 2</span></div></pre></td></tr></table></figure></p>
+<p>上述代码中正确的执行顺序为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a;</div><div class="line">a = <span class="number">2</span>;</div><div class="line"><span class="built_in">console</span>.log(a);  <span class="comment">// 2</span></div></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//undefined</span></div><div class="line"><span class="keyword">var</span> a = <span class="number">2</span>;</div></pre></td></tr></table></figure>
+<p>上述代码中正确的执行顺序为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a;</div><div class="line"><span class="built_in">console</span>.log(a);  <span class="comment">//undefined</span></div><div class="line">a = <span class="number">2</span>;</div></pre></td></tr></table></figure>
+<p>以上发生的过程就好像变量声明从它们在代码中出现的位置被“移动”到了最上面，这个过程就叫作提升。</p>
+<p>函数声明也会被提升。<strong>但是函数表达式不会被提升</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">foo();   <span class="comment">// 2    函数声明被提升所以能够执行</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  	<span class="built_in">console</span>.log(<span class="number">2</span>);</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
+<p>上述代码中正确的执行顺序为：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  	<span class="built_in">console</span>.log(<span class="number">2</span>);</div><div class="line">   &#125;</div><div class="line">   foo(); <span class="comment">//2</span></div></pre></td></tr></table></figure></p>
+<hr>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">bar(); <span class="comment">//Uncaught TypeError: bar is not a function</span></div><div class="line"><span class="keyword">var</span> bar = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">     	<span class="built_in">console</span>.log(<span class="number">3</span>);</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>上述代码中正确的执行顺序为：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> bar;</div><div class="line">   bar();  <span class="comment">//Uncaught TypeError: bar is not a function</span></div><div class="line">   bar = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">     	<span class="built_in">console</span>.log(<span class="number">3</span>);</div><div class="line">   &#125;</div></pre></td></tr></table></figure></p>
+<p>由此可见，函数声明和变量声明一样，会被提升，但是函数表达式是不会被提升的。</p>
+<p>函数声明和变量声明都会被提升。当它们同时出现时是函数会首先被提升,然后才是变量。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">foo(); <span class="comment">// 1</span></div><div class="line"> 	<span class="keyword">var</span> foo;</div><div class="line"> 	<span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</div><div class="line"> 	  	<span class="built_in">console</span>.log( <span class="number">1</span> );</div><div class="line"> 	&#125;</div><div class="line"> 	foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">   	onsole.log( <span class="number">2</span> );</div><div class="line"> 	&#125;;</div></pre></td></tr></table></figure></p>
+<p>上述代码正确的执行顺序为；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123; </div><div class="line">	<span class="built_in">console</span>.log( <span class="number">1</span> );&#125;foo(); <span class="comment">// 1</span>foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; 	<span class="built_in">console</span>.log( <span class="number">2</span> );&#125;;</div></pre></td></tr></table></figure></p>
+<p>var foo尽管出现在function foo()…的声明之前,但它是重复的声明(因此被忽略了),因为函数声明会被提升到普通变量之前;</p>
+<h2 id="5-作用域闭包"><a href="#5-作用域闭包" class="headerlink" title="5.作用域闭包"></a>5.作用域闭包</h2><p>当函数可以记住并访问所在的词法作用域,即函数是在当前词法作用域之外执行,这时就产生了闭包。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123; </div><div class="line">	<span class="keyword">var</span> a = <span class="number">2</span>;	<span class="function"><span class="keyword">function</span> <span class="title">bar</span>(<span class="params"></span>) </span>&#123; 		<span class="built_in">console</span>.log( a );	&#125;	<span class="keyword">return</span> bar; &#125;<span class="keyword">var</span> baz = foo();baz(); <span class="comment">// 2</span></div></pre></td></tr></table></figure></p>
+<p>无论通过何种手段将内部函数传递到所在的词法作用域以外,它都会持有对原始定义作用域的引用,无论在何处执行这个函数都会使用闭包。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">生活随记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">js 总结</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://izqcool.com/2018/10/17/《你不知道的JavaScript》(上卷第一部分)/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/05/20/hexo-520随便写点/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">520随便写点</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="《你不知道的JavaScript》(上卷第一部分)" data-title="《你不知道的JavaScript》(上卷第一部分)" data-url="http://izqcool.com/2018/10/17/《你不知道的JavaScript》(上卷第一部分)/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-    
+
 
 
           </div>
@@ -238,8 +389,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
