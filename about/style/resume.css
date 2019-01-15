@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 1080px;
+    height: 600px;
+    padding: 0 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+p {
+    word-break: break-all;
+}
+.header {
+    margin-top: 20px;
+}
+.name {
+    font-size: 30px;
+    line-height: 50px;
+}
+.base {
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    line-height: 38px;
+}
+.base div {
+    font-size: 22px;
+    width: 100%;
+}
+.base div i {
+    margin-right: 10px;
+}
+
+.content .item .head {
+    line-height: 50px;
+    font-size: 30px;
+    margin-top: 12px;
+}
+.content .item .head i {
+    margin-right: 14px;
+}
+.content .edu .info {
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+}
+
+.content .edu .info div {
+    font-size: 24px;
+    line-height: 40px;
+    width: 100%;
+}
+.experience .info p {
+    width: 100%;
+    line-height: 40px;
+    font-size: 22px;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+}
+
+.list p {
+    line-height: 36px;
+    font-size: 20px;
+    text-indent: 2em;
+    padding: 0 !important;
+    margin:  0 !important;
+}
+.list .name_and_time {
+    font-weight: 500;
+    margin-top: 10px;
+    text-indent: 0;
+    padding: 0 !important;
+    margin:  0 !important;
+}
+
+.list ul {
+    padding: 0 !important;
+    margin:  0 !important;
+}
+
+.list ul li {
+    margin-left: 3em;
+    line-height: 34px;
+}
+
+.wrench ul {
+    padding: 0 !important;
+    margin:  0 !important;
+}
+
+.wrench ul  li{
+    margin-left: 3em;
+    line-height: 34px;
+}
